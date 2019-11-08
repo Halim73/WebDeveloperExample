@@ -3909,7 +3909,7 @@ a.waves-effect, a.waves-light {
 .btn {
   margin: 0.375rem;
   color: inherit;
-  text-transform: uppercase;
+  text-transform: none;
   word-wrap: break-word;
   white-space: normal;
   cursor: pointer;

@@ -577,6 +577,7 @@ pre code {
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+    justify-content: center;
   }
 }
 
@@ -601,11 +602,20 @@ pre code {
 .container-fluid {
   width: 100%;
   padding-right: 25%;
-  padding-left: 20%;
+  padding-left: 15%;
+  margin-top: 2%;
   margin-right: auto;
   margin-left: auto;
+  justify-content: center;
+  position: relative;
+  display: inline-block;
 }
 
+.container-fluid-custom {
+  width: 100%;
+  padding-right: 25%;
+  padding-left: 20%;
+}
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -613,6 +623,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: center;
 }
 
 .no-gutters {
@@ -2395,6 +2406,9 @@ textarea.form-control {
     margin-bottom: 0;
   }
 }
+.custom-btn{
+  width: 20em;
+}
 
 .btn {
   display: inline-block;
@@ -4151,7 +4165,9 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #007bff;
+  border-bottom: 5px solid #fff;
+  position:absolute;
+  margin-bottom: 5%;
 }
 
 .nav-fill .nav-item {
@@ -4193,7 +4209,7 @@ input[type="button"].btn-block {
 }
 
 .navbar > .container,
-.navbar > .container-fluid {
+.navbar > .container-fluid > .container-fluid-custom {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -4204,8 +4220,15 @@ input[type="button"].btn-block {
   justify-content: space-between;
 }
 
+.custom-image{
+  width:35%;
+  height:35%;
+  min-width: 35%;
+  min-height: 35%;
+}
+
 .navbar-brand {
-  display: inline-block;
+  display: inline-flex;
   padding-top: 0.3125rem;
   padding-bottom: 0;
   margin-right: 2rem;
@@ -4280,7 +4303,7 @@ input[type="button"].btn-block {
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
-  .navbar-expand-sm > .container-fluid {
+  .navbar-expand-sm > .container-fluid > .container-fluid-custom {
     padding-right: 0;
     padding-left: 0;
   }
@@ -4322,7 +4345,7 @@ input[type="button"].btn-block {
 
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
-  .navbar-expand-md > .container-fluid {
+  .navbar-expand-md > .container-fluid > .container-fluid-custom{
     padding-right: 0;
     padding-left: 0;
   }
@@ -4347,7 +4370,7 @@ input[type="button"].btn-block {
     padding-left: 0.5rem;
   }
   .navbar-expand-md > .container,
-  .navbar-expand-md > .container-fluid {
+  .navbar-expand-md > .container-fluid .container-fluid-custom {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
@@ -4364,7 +4387,7 @@ input[type="button"].btn-block {
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
-  .navbar-expand-lg > .container-fluid {
+  .navbar-expand-lg > .container-fluid > .container-fluid-custom{
     padding-right: 0;
     padding-left: 0;
   }
@@ -4431,7 +4454,7 @@ input[type="button"].btn-block {
     padding-left: 0.5rem;
   }
   .navbar-expand-xl > .container,
-  .navbar-expand-xl > .container-fluid {
+  .navbar-expand-xl > .container-fluid > .container-fluid-custom{
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
@@ -4454,7 +4477,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-expand > .container,
-.navbar-expand > .container-fluid {
+.navbar-expand > .container-fluid > .container-fluid-custom{
   padding-right: 0;
   padding-left: 0;
 }
@@ -4474,7 +4497,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-expand > .container,
-.navbar-expand > .container-fluid {
+.navbar-expand > .container-fluid > .container-fluid-custom{
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
@@ -4515,6 +4538,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9);
+  border-bottom: 10px solid #fff;
 }
 
 .navbar-light .navbar-toggler {
@@ -4882,13 +4906,13 @@ input[type="button"].btn-block {
 .meet_pos {
   position: absolute;
   bottom: 20%;
-  left: 23%;
+  left: 17%;
 }
 
 .page-header-1{
   position: relative;
   text-align: center;
-  height:5%;
+  height:30px;
   background-color: hsl(145, 24%, 25%);
 }
 
