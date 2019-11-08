@@ -4899,6 +4899,15 @@ input[type="button"].btn-block {
   color:hsl(19,67%,37%);
 }
 
+.page-header-3{
+  position: relative;
+  text-align: center;
+  height: 10px;
+  width:100%;
+  background-color:hsl(19,67%,37%);
+  padding-bottom: 0%;
+}
+
 .page-footer-1{
   position: relative;
   text-align: center;
