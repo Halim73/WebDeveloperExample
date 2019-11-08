@@ -239,6 +239,23 @@ button:focus {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
+.fb{
+  background-image: url('img/facebook-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.youtube{
+  background-image: url('img/youtube-icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 10px;
+}
+
+.lgo{
+  background-image: url('img/logo.png');
+  background-repeat: no-repeat;
+  background-position: 50% 10px;
+}
 input,
 button,
 select,
@@ -583,8 +600,8 @@ pre code {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 25%;
+  padding-left: 20%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -4062,6 +4079,16 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  text-align:center;
+}
+
+.nav li{
+  display:inline;
+}
+
+.nav a{
+  display:inline-block;
+  padding: 0;
 }
 
 .nav-link {
@@ -4161,6 +4188,7 @@ input[type="button"].btn-block {
   justify-content: space-between;
   padding: 0.5rem 1rem;
   background-color: hsl(135,6%,75%);
+  background-image: linear-gradient(to right,hsl(135,6%,75%),#fff);
   height:13.76%;
 }
 
@@ -4196,9 +4224,10 @@ input[type="button"].btn-block {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0;
+  padding-left: 0%;
   margin-bottom: 0;
   list-style: none;
+  text-align:center;
 }
 
 .navbar-nav .nav-link {
@@ -4852,8 +4881,8 @@ input[type="button"].btn-block {
 
 .meet_pos {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
+  bottom: 20%;
+  left: 23%;
 }
 
 .page-header-1{
@@ -4866,7 +4895,15 @@ input[type="button"].btn-block {
 .page-header-2{
   position: relative;
   text-align: center;
+  height: 6.25%;
   color:hsl(19,67%,37%);
+}
+
+.page-footer-1{
+  position: relative;
+  text-align: center;
+  height: 25%;
+
 }
 
 .page-link {
